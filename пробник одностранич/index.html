@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div id = "logo">
+        <img src="crimea-logo-removebg-preview.png" style="width: 90px;">
+        <p><span class = "first">G</span>rand<span class = "second">H</span>otel</p>
+    </div>
+
+    <div id = "about">
+        <a href="#stop" onclick="slowScroll('#main')" title="Где остановиться">Где остановиться?</a>
+        <a href="#ride" onclick="slowScroll('overview')" title="Куда поехать">Куда поехать?</a>
+        <a href="#contacts" onclick="slowScroll('contacts')" title="Контакты">Контакты</a>
+    </div>
+    </header>
+
+    <div id="top">
+        <h1>Отдохни</h1>
+        <h3>В Крыму!</h3>
+    </div>
+    <article id="stop"></article>
+
+    <div id="main"> 
+        
+        <div class="intro">
+            <h2>Остановиться можно здесь!</h2>
+        </div>
+        <div class="text">
+            <span>
+                Вот небольшой список хороших и качественных отелей где всё включено!
+            </span>
+            <br>
+            <a href="#">Mriya Resort & SPA</a>
+            <br>
+            <a href="#">Yalta Intourist</a>
+            <br>
+            <a href="#">Oreanda</a>
+            <br>
+            <a href="#">Riviera Sunrise Resort & SPA</a>
+        </div>
+    
+    </div>
+    
+    <div id="overview">
+        
+        <article id="ride"><h2>Куда поехать?</h2></article>
+        <h4>Мы расскажем вам куда можно поехать отдохнуть.</h4>
+        <div class = "img">
+            <img src = "Севастополь.png">
+            <span>Севастополь — город на юго-западе Крымского полуострова, на побережье Чёрного моря.</span>
+        </div>
+        <div class = "img">
+            <img src = "Ялта.jpg">
+            <span>Ялта — курортный и портовый город на Южном берегу Крыма.</span>
+        </div>
+        <div class = "img">
+            <img src = "Евпатория.jpg">
+            <span>Евпатория — город-курорт на западе Крыма. Административный центр городского округа Евпатория Республики Крым.</span>
+        </div>
+        <div class = "img">
+            <img src = "Алушта.jpg">
+            <span>Алушта — город-курорт на южном берегу Крыма. Административный центр городского округа Алушта и Алуштинского горсовета, так называемой Большой Алушты.</span>
+        </div>
+
+    </div>
+
+    <div id="contacts">
+        <center><h5>Обратная связь</h5></center>
+        <form id="form_input">
+            <label for="name">Имя <span>*</span></label><br>
+            <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+            <label for="email">Ваша почта <span>*</span></label><br>
+            <input type="email" placeholder="Введите email" name="enail" id="email"><br>
+            <label for="message">Сообщение <span>*</span></label><br>
+            <textarea type="message" placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+            <div id="mess_send" class="btn">Отправить</div>
+        </form>
+        <div class="soc">
+            <img src="icons8-vk (1).svg" alt="" height="48" width = "48">
+            <img src="icons8-instagram.svg" alt="" height="48" width="48">
+            <img src="icons8-telegram.svg" alt="" height="48" width="48">
+            <img src="mail-svgrepo-com.svg" alt="" height="48" width="48">
+         </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id){
+            $('body').animate({
+                    scrollTop: $(id).offset().top
+                }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if ($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
+
+
+

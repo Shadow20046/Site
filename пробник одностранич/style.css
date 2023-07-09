@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Raleway:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Raleway:ital,wght@1,200&family=Ysabeau+Infant:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: white;
+    font-family: 'Trebuchet MS', Helvetica;
+
+}
+
+header{
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo{
+    cursor: pointer;
+}
+
+header #logo p{
+    line-height: 45px;
+    margin-top: 10px;
+    text-shadow: #808080 3px 3px 2px, -1px -1px 0 #757575;
+    font: bold 1.9em 'Raleway', sans-serif;
+    color: white;
+}
+
+header #logo img{
+    position: fixed;
+}
+
+.first{
+    line-height: 45px;
+    margin-left: 100px;
+    font: bold 1.7em 'Raleway', sans-serif;
+
+}
+
+.second{
+    line-height: 45px;
+    font: bold 1.7em 'Raleway', sans-serif;
+    margin-left: 2px;
+}
+
+@media (min-width: 701px) {
+    #logo{
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+    #about{
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px){
+    #logo{
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #about{
+        float: right;
+        width: 100%
+    }
+}
+
+#about{
+    text-align: center;
+    margin-top: 15px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    font: bold 1.42em 'Caprasimo', cursive;
+}
+
+#about > a{color: white; text-decoration: none;}
+
+#about > a:hover {
+    color: rgba(176, 174, 174, 0.746);
+    text-decoration: underline none;
+
+}
+
+#about > a:not(:last-child) {
+    margin-right: 7%;
+}
+
+.fixed{
+    z-index: 5000;
+    background-color: #0474c6;
+    border-bottom: 2px solid silver;
+}
+
+header.fixed #logo{
+    color: white;
+}
+
+.fixed #about a {color: white}
+
+.fixed #about a:hover{color:#a4a2a2;}
+
+#top{
+    width: 100%;
+    background-image: url(https://azovsky.ru/uploads/images/articles/chmore09082018-05_big-n.jpg);
+    background-blend-mode: multiply;
+    background-color:rgb(119, 174, 201);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+
+@media (min-width: 1001px) {
+    #top{
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top{
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    #top{
+        font-size: 1.2em;
+        padding-top: 50%;
+        height: 500px;
+    }
+}
+
+#top h1{
+    padding-top: 20%;
+}
+
+#top h3{
+    color: rgb(206, 202, 202);
+}
+
+#main{
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+#main div{
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+@media (min-width: 1401px){
+    #main{
+        padding: 100px 20%;
+        width: 60%
+    }
+}
+
+@media (max-width: 140px){
+    #main{
+        padding: 100px 10%;
+        width: 80%
+    }
+}
+
+@media (max-width: 700px){
+    #main div{
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#main h2{font-size: 3em;}
+#main span, a{color: #a4a2a2;}
+
+#overview{
+    float: left;
+    background-image: url(https://azovsky.ru/uploads/images/articles/chmore09082018-01_big-n.jpg);
+
+    background-blend-mode: multiply;
+    background-color: rgb(189, 218, 233);
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#overview h2 {font-size: 3em;}
+#overview h4 {color: #edeaea; font-size: 1.5em;}
+
+#overview .img{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+
+#overview .img:nth-child(odd){
+    margin-left: 18%;
+}
+
+#overview img{
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid white;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#overview span{
+    float: left;
+    width: 68.7%;
+    font-size: 1.5em;
+    margin-top: 3px;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    background-color: white;
+    font-family: 'Caprasimo', cursive;
+}
+
+@media (max-width: 700px) {
+    #overview .img{
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+}
+
+#contacts{
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid gray;
+    background: #f4f4f4;
+}
+
+#contacts .soc{
+    float: left;
+    margin-left: 10.8%;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Raleway', serif;
+    font-weight: lighter;
+}
+
+#contacts h5{font-size: 3em; color: #4f4f4f;}
+
+#form_input{
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 38%;
+    font-size: 1.3em;
+}
+
+#form_input label{
+    color: #505050;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Raleway', serif;
+}
+
+#form_input label > span{
+    color: red;
+}
+
+#form_input input, #form_input textarea{
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus{
+    border-color: #333;
+}
+
+.btn{
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.3em;
+    background-color: #dd1313;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn:hover{
+    background-color: #b52525;
+}
